@@ -15,4 +15,13 @@ import java.util.List;
 @Builder
 public class ChatGPTResponse {
     private List<ChatGPTChoice> choices;
+
+    // Getter and setter
+    public List<ChatGPTChoice> getChoices() {
+        return choices;
+    }
+
+    public void setChoices(List<ChatGPTChoice> choices) {
+        this.choices = choices;
+    }
 }
