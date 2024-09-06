@@ -15,7 +15,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the jar from the build stage
-COPY --from=build /app/target/*.jar app.jar
+COPY --from=build ./target/EmpowerHer-0.0.1-SNAPSHOT.jar app.jar
 
 # Run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
