@@ -5,6 +5,6 @@ import lombok.Data;
 
 @Data
 @Builder
-public class ChatGPTChoice {
+public class SearchAIChoice {
     private String text;
 }
